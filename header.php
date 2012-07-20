@@ -34,7 +34,7 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
   <!-- CSS : implied media="all" -->
-  <?php versioned_stylesheet($GLOBALS["TEMPLATE_RELATIVE_URL"]."html5-boilerplate/css/style.css") ?>
+  <?php versioned_stylesheet($GLOBALS["TEMPLATE_RELATIVE_URL"]."style.css") ?>
 
   <!-- For the less-enabled mobile browsers like Opera Mini -->
   <?php versioned_stylesheet($GLOBALS["TEMPLATE_RELATIVE_URL"]."html5-boilerplate/css/handheld.css", 'media="handheld"') ?>
@@ -60,6 +60,9 @@
   <div class="aligncenter" id="container">
     <header class="aligncenter" role="banner">
       <h1><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?> hello hello </a></h1>
-      <p class="description"><?php bloginfo('description'); ?></p>
+      <!-- <p class="description"><?php bloginfo('description'); ?></p> -->
+      <nav>
+        <?php wp_list_pages('title_li=' ); ?>
+      </nav>
     </header>
 
