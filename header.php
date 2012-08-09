@@ -27,7 +27,7 @@
   initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
   maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
   -->
-  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+  <meta name="viewport" content="width=1000px; initial-scale=1.0; maximum-scale=1.0;">
 
   <!-- Place favicon.ico and apple-touch-icon.png in the root of your domain and delete these references -->
   <link rel="shortcut icon" href="/favicon.ico">
@@ -40,7 +40,7 @@
   <?php versioned_stylesheet($GLOBALS["TEMPLATE_RELATIVE_URL"]."html5-boilerplate/css/handheld.css", 'media="handheld"') ?>
 
   <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
-  <?php versioned_javascript($GLOBALS["TEMPLATE_RELATIVE_URL"]."html5-boilerplate/js/modernizr-1.5.min.js") ?>
+  <?php versioned_javascript($GLOBALS["TEMPLATE_RELATIVE_URL"]."js/modernizr-1.5.min.js") ?>
 
   <!-- Wordpress Head Items -->
   <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
@@ -62,7 +62,35 @@
       <h1><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?> hello hello </a></h1>
       <!-- <p class="description"><?php bloginfo('description'); ?></p> -->
       <nav>
-        <?php wp_list_pages('title_li=' ); ?>
+        <ul class="left block">
+          <li>
+            <a href="/wordpress/coaches/">Coaches</a>
+          </li>
+          <li>
+            <a href="/wordpress/jcm-charity/">JCM Charity</a>
+          </li>
+          <li>
+            <a href="/wordpress/routes/">Routes</a>
+          </li>
+        </ul>
+        <ul class="block right">
+          <li>
+            <a href="/wordpress/contact/">Contact</a>
+          </li>
+          <li>
+            <a href="/wordpress/news/">News</a>
+          </li>
+          <li>
+            <a href="/wordpress/something-else/">Something Else</a>
+          </li>
+        </ul>
+        <?php /*wp_list_pages('title_li=' );*/ ?>
       </nav>
     </header>
+
+    <div class="parallax">
+  <div class="sky"></div>
+  <div class="mountain"></div>
+  <div class="road"></div>
+</div>
 

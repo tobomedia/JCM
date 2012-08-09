@@ -193,6 +193,37 @@ button {  width: auto; overflow: visible; }
 * html .clearfix { height: 1%; } /* Hides from IE-mac \*/
 .clearfix { display: block; }
 
+ /* Modifiers */
+ 
+  .left {
+    float: left; }
+  .right {
+    float: right; }
+  .middle {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+  .block {
+    display: block; }
+  .inline {
+    display: inline; }
+  .overflow-hide {
+    overflow: hidden; }
+  .visible {
+    /*visibility: visible;*/
+    display: block; }
+  .hidden {
+    display: none;
+    /*visibility: hidden;*/ }
+.open {
+  display:block;
+}
+
+.small-txt {
+  font-size: 0.8em;
+}
+  .text-center {
+    text-align: center; }
 
 
 
@@ -201,8 +232,29 @@ button {  width: auto; overflow: visible; }
     Author: 
  */
 
+
+ /* Navigation */
+ nav {
+  margin-top: 10px auto;
+  display: block;
+ }
+
+ nav li {
+  list-style: none;
+  display: inline;
+  padding: 5px 10px;
+ }
+
+ nav li a {
+  text-decoration: none;
+}
+
+nav li a:hover {
+  text-decoration: underline;
+}
+
 html {
-  background: #fff;
+  background: url(../JCM/img/bg.png) #fff;
 }
 
 
@@ -213,27 +265,85 @@ html {
 }
 
 #container {
-  width:80%;
+  width:980px;
 }
 
 
 header.aligncenter {
   width:100%;
-  background:#f6f6f6;
-  box-shadow: 0 0 10px #666;
+  background:#f3f3f3;
+  box-shadow: 0 0 0 5px rgba(205, 205, 205, 0.5), 0 0 15px #666;
   border:1px solid #fff;
+  position: relative;
+  z-index: 10;
+  height: 50px;
+  margin-bottom: -30px;
+  padding: 10px;
 }
+
+header.aligncenter h1 a {
+  margin: -10px auto -90px;
+  width:260px;
+  height: 130px;
+  display: block;
+  background: url(../JCM/img/logo.png) no-repeat center top;
+  text-indent: -900px;
+  overflow: hidden;
+}
+
+
+
+.parallax {
+position: relative;
+width: 1100px;
+height: 400px;
+margin: 0 auto;
+overflow: hidden;
+left: 50%;
+z-index: 0;
+margin-left: -555px;
+border: 15px white solid;
+box-shadow: 0 0 15px #9F9F9F;
+}
+
+.sky {
+  position: absolute;
+  width: 1400px;
+  height: 400px;
+  z-index: 1;
+  background: url(../JCM/img/sky.png) repeat-x center 0px;
+  margin: 0 auto;
+}
+
+.mountain {
+  position: absolute;
+  width: 1300px;
+  height: 400px;
+  z-index: 2;
+  background: url(../JCM/img/mountain.png) no-repeat center -90px;
+  margin: 0 auto;
+}
+
+.road {
+  position: absolute;
+  width: 1200px;
+  height: 400px;
+  z-index: 3;
+  background: url(../JCM/img/road.png) no-repeat  center bottom;
+  margin: 0 auto;
+}
+
 
 #main {
   width:100%;
-  background:#f6f6f6;
-  box-shadow: 0 0 10px #666;
+  background:#f3f3f3;
+  box-shadow: 0 0 0 5px rgba(205, 205, 205, 0.5), 0 0 15px #666;
   border:1px solid #fff;
+  position: relative;
+  z-index: 10;
+  margin-top: -30px;
+  padding: 10px;
 }
-
-
-
-
 
 
 

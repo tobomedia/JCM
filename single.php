@@ -40,7 +40,7 @@ get_header(); ?>
         // Neither Comments, nor Pings are open ?>
         Both comments and pings are currently closed.
 
-      <?php } edit_post_link('Edit this entry','','.'); ?>
+      <?php } ?>
       </p>
     </footer>
     <nav>
@@ -48,7 +48,7 @@ get_header(); ?>
       <div><?php next_post_link('%link &raquo;') ?></div>
     </nav>
 
-    <?php comments_template(); ?>
+    <?php /*comments_template();*/ ?>
 
   </article>
 
